@@ -2,7 +2,6 @@
 
 # Dependancies
 - python : [python.org/downloads/](https://www.python.org/downloads/)
-- ffmpeg : ``winget install ffmpeg``
 
 # Setup
 

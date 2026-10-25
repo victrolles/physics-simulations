@@ -103,6 +103,6 @@ animation = FuncAnimation(
 )
 
 # 12. Save animation as GIF
-animation.save("double_pendulum.gif", writer="pillow", fps=fps)
+animation.save("videos/double_pendulum.gif", writer="pillow", fps=fps)
 
 plt.close(fig)
