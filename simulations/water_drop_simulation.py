@@ -155,7 +155,8 @@ fps = 30  # Frames per second
 animation = FuncAnimation(
     fig,
     update,
-    interval=30,
+    frames=300,
+    interval=1000 / fps,
     blit=True,
     cache_frame_data=False
     )
