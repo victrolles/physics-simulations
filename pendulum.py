@@ -60,12 +60,17 @@ def update(frame):
     return line, bob
 
 # 11. Create animation
+fps = 30  # Frames per second
+
 animation = FuncAnimation(
     fig,
     update,
     frames=len(theta),
-    interval=20, # Time between frames in milliseconds
+    interval=1000/fps, # Time between frames in milliseconds
     blit=True # Optimize drawing by only updating changed parts of the plot
 )
 
-plt.show()
+# 12. Save animation as GIF
+animation.save("pendulum.gif", writer="pillow", fps=fps)
+
+plt.close(fig)
